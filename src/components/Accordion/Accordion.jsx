@@ -1,6 +1,12 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import style from "./Accordion.module.scss";
 import SlideDown from "../../transitions/SlideDown/SlideDown";
+
+Accordion.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default function Accordion({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
