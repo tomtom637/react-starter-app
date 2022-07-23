@@ -1,0 +1,16 @@
+.people {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #eee;
+
+    &:nth-child(odd) {
+      background: #fafafa;
+    }
+  }
+  &__count {
+    margin-block-end: 1rem;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "people": [
+    {
+      "id": "81cc9258-e5e4-443a-bd47-b7d0e3d91fa9",
+      "name": "alice",
+      "eyes": "brown"
+    },
+    {
+      "id": "04294a0b-99d6-41db-878e-ff110fa4a018",
+      "name": "alexis",
+      "eyes": "brown"
+    },
+    {
+      "id": "e2b14fe4-e1b8-4173-86b8-eb2fff04d0da",
+      "name": "pia",
+      "eyes": "black"
+    },
+    {
+      "id": "439684d6-9fda-4720-a889-f9aa46bb8d31",
+      "name": "thomas",
+      "eyes": "green"
+    }
+  ]
+}

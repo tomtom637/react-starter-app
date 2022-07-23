@@ -1,0 +1,32 @@
+.enter {
+  opacity: 0;
+  max-height: 0;
+}
+
+.enterActive {
+  max-height: 500px;
+  opacity: 100%;
+  transition: all 200ms ease-out;
+}
+
+.appear {
+  opacity: 0;
+  max-height: 0;
+}
+
+.appearActive {
+  max-height: 500px;
+  opacity: 100%;
+  transition: all 200ms ease-out;
+}
+
+.exit {
+  max-height: 500px;
+  opacity: 100%;
+}
+
+.exitActive {
+  opacity: 0;
+  max-height: 0;
+  transition: all 200ms ease-out;
+}

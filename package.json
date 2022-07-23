@@ -1,0 +1,55 @@
+{
+  "name": "react-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "json-server": "json-server --watch -p 8080 ./src/assets/db.json",
+    "dev-json": "concurrently --kill-others \"yarn json-server\" \"yarn dev --debug\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "gc": "node .generate_component $1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "engines": {
+    "npm": "please-use-yarn-instead",
+    "yarn": ">=1.0.0"
+  },
+  "dependencies": {
+    "jotai": "^1.7.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "6",
+    "react-transition-group": "^4.4.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@rollup/pluginutils": "^4.2.1",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.2.0",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/dom": "^8.16.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.3.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "babel-loader": "^8.2.5",
+    "concurrently": "^7.3.0",
+    "jsdom": "^20.0.0",
+    "msw": "^0.44.2",
+    "sass": "^1.54.0",
+    "vite": "^3.0.0",
+    "vitest": "^0.18.1",
+    "whatwg-fetch": "^3.6.2"
+  }
+}

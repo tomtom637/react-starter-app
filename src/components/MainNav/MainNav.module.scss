@@ -1,0 +1,18 @@
+.main-nav {
+
+  & ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  & a {
+    text-decoration: none;
+    color: var(--pink);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--pink-accent);
+    }
+  }
+}

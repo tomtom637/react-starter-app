@@ -1,0 +1,27 @@
+.person-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  &__error {
+    position: absolute;
+    inset: auto auto -1.5rem auto;
+    color: var(--pink);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  &__form-control {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1rem;
+  }
+  & input {
+    padding: 0.2rem 0.6rem;
+  }
+  &__button {
+    padding: 0.2rem 0.6rem;
+  }
+}
