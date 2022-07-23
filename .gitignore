@@ -23,3 +23,4 @@ src/assets/db.json
 *.njsproj
 *.sln
 *.sw?
+src/assets/db.json
