@@ -1,4 +1,4 @@
-import Accordion from "../components/Accordion/Accordion";
+import Accordion from "../../components/Accordion/Accordion";
 
 export default function About() {
   return (

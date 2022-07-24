@@ -6,9 +6,9 @@ import {
   Route,
 } from "react-router-dom";
 import App from './App';
-import Home from './routes/Home';
-import About from './routes/About';
-import NoPageFound from './routes/NoPageFound';
+import Home from './routes/Home/Home';
+import About from './routes/About/About';
+import NoPageFound from './routes/NoPageFound/NoPageFound';
 import './scss/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
