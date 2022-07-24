@@ -2,6 +2,7 @@
 
 This is a work in progress starter for a react application with:
 
+- prop-types (to add types to our props)
 - vite (compiler)
 - vitest (tests)
 - jotai (state management)
