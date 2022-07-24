@@ -1,5 +1,4 @@
 .main-nav {
-
   & ul {
     display: flex;
     gap: 1rem;
@@ -9,10 +8,10 @@
   & a {
     text-decoration: none;
     color: var(--pink);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-      color: var(--pink-accent);
+      color: var(--dark-gray-accent);
     }
   }
 }
