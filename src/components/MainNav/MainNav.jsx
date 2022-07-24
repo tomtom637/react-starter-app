@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import style from "./MainNav.module.scss";
 
 const activeStyle = {
-  borderBottom: "2px solid var(--pink)",
+  borderBottom: "1px solid var(--pink)",
 };
 
 export default function () {
