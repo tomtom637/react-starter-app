@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./components/MainFooter/MainFooter";
 import MainNav from "./components/MainNav/MainNav";
 
 export default function App() {
@@ -19,7 +18,6 @@ export default function App() {
       </div>
       <br />
       <Outlet />
-      {/* <Footer /> */}
     </div>
   );
 }
