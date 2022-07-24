@@ -1,11 +1,12 @@
-import { useState, useEffect, useCallback } from "react";
+import PropTypes from 'prop-types';
 
-import { peopleDataAtom, peopleNumberAtom } from "../../store";
-import { useAtom } from "jotai";
+Person.propTypes = {
+  personId: PropTypes.string.isRequired,
+  people: PropTypes.array.isRequired,
+  setPeople: PropTypes.func.isRequired
+};
 
 import useFetch from "../../api_calls";
-
-import MoveToSideAndFade from "../../transitions/MoveToSideAndFade/MoveToSideAndFade";
 import style from "./Person.module.scss";
 
 export default function Person({ personId, people, setPeople }) {
