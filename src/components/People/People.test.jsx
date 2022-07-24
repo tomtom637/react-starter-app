@@ -14,21 +14,9 @@ describe("People", () => {
     render(<People />);
   });
 
-  it("should show at least one person", async () => {
+  it("should show 3 persons", async () => {
     await waitForElementToBeRemoved(() => screen.queryByText(/loading.../i));
     const people = screen.getAllByTestId("person-item");
-    expect(people.length).toBeGreaterThan(0);
+    expect(people.length).toBe(3);
   });
-
-  // it("should show at least one person", async () => {
-  //   await waitFor(() => {
-  //     const people = screen.getAllByTestId("person-item");
-  //     expect(people.length).toBeGreaterThan(0);
-  //   }, { timeout: 3000 });
-  // });
-
-  //   it("should show more than 0 people", async () => {
-  //     const people = await screen.findAllByTestId("person-item");
-  //     expect(people.length).toBeGreaterThan(0);
-  //   });
 });
