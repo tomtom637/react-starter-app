@@ -9,12 +9,14 @@ import App from './App';
 import Home from './routes/Home/Home';
 import About from './routes/About/About';
 import NoPageFound from './routes/NoPageFound/NoPageFound';
+import Test from "./routes/Test/Test";
 import './scss/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/test" element={<Test />} />
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
