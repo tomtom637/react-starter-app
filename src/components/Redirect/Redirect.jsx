@@ -6,8 +6,8 @@ Redirect.propTypes = {};
 
 export default function Redirect(props) {
   return (
-    <div>
+    <>
       {true ? <Navigate to="home" /> : <Navigate to="about" />}
-    </div>
+    </>
   );
 };
