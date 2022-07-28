@@ -34,10 +34,10 @@ export default function Accordion({ title, children }) {
             animate="open"
             exit="collapsed"
             variants={{
-              open: { opacity: 1, height: "auto", y: 0 },
-              collapsed: { opacity: 0, height: 0, y: "-30px" },
+              open: { opacity: 1, height: "auto", y: 0, transition: { duration: 0.2, ease: "backOut" } },
+              collapsed: { opacity: 0, height: 0, y: "-25px", transition: { duration: 0.2, ease: "backIn" } },
             }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}>{children}</motion.div>
+          >{children}</motion.div>
         )}
       </AnimatePresence>
       {/* </SlideDown> */}
