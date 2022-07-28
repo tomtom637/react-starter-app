@@ -1,7 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import style from "./Accordion.module.scss";
-import SlideDown from "../../transitions/SlideDown/SlideDown";
+// import SlideDown from "../../transitions/SlideDown/SlideDown";
+import { motion, AnimatePresence } from "framer-motion";
 
 Accordion.propTypes = {
   children: PropTypes.node.isRequired,
@@ -24,9 +25,22 @@ export default function Accordion({ title, children }) {
         </button>
       </header>
 
-      <SlideDown in={isOpen} mountOnEnter unmountOnExit>
-        <div className={style["accordion-content"]}>{children}</div>
-      </SlideDown>
+      {/* <SlideDown in={isOpen} mountOnEnter unmountOnExit> */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className={style["accordion-content"]}
+            initial="collapsed"
+            animate="open"
+            exit="collapsed"
+            variants={{
+              open: { opacity: 1, height: "auto", y: 0 },
+              collapsed: { opacity: 0, height: 0, y: "-30px" },
+            }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}>{children}</motion.div>
+        )}
+      </AnimatePresence>
+      {/* </SlideDown> */}
     </div>
   );
 }
