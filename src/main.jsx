@@ -7,6 +7,7 @@ import {
   Navigate
 } from "react-router-dom";
 import App from './App';
+import Redirect from './components/Redirect/Redirect';
 import Home from './routes/Home/Home';
 import About from './routes/About/About';
 import NoPageFound from './routes/NoPageFound/NoPageFound';
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/test" element={<Test />} />
         <Route path="/" element={<App />}>
+          <Route path="/" element={<Redirect />} />
           <Route path="home" element={<Home />}>
             <Route index element={<Navigate to="hello" />} />
             <Route path="hello" element={<p>Hello from the index route navigating to the hello route</p>} />
